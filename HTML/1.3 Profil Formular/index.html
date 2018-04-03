@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titel</title>
+</head>
+
+<body>
+    <form id="profil" action="mailto:carsten.lubetzki@arithnea.de" method="post">
+        <fieldset>
+            <legend>Persönliche Daten</legend>
+            <div>
+                Anrede
+                <select>
+                    <option>Frau</option>
+                    <option>Herr</option>
+                </select>
+            </div>
+            <div>
+                <label for="vorname">Vorname:</label>
+                <input type="text" name="vorname" id="vorname" required>
+            </div>
+            <div>
+                    <label for="nachname">Nachname:</label>
+                <input type="text" name="nachname" required>
+            </div>
+            <div>
+                Adresse eingeben:
+                <input type="text" name="Adresse">
+            </div>
+            <div>
+                Hausnummer eingeben:
+                <input type="number" name="Hausnummer">
+            </div>
+            <div>
+                Postleitzahl:
+                <input type="number" name="PLZ">
+            </div>
+            <div>
+                Handynummer:
+                <input type="tel" name="Mobil">
+            </div>
+            <div>
+                Geburtstag:
+                <input type="date" name="Geburtstag">
+            </div>
+            <div>
+                E-Mail Adresse:
+                <input type="email" name="Email Adresse">
+            </div>
+
+        </fieldset>
+    </form>
+    <form id="profil2" action="mailto:carsten.lubetzki@arithnea.de" method="post">
+        <fieldset>
+            <legend>Profildaten und Anpassungen</legend>
+            <ul>
+                <li>
+                    Benutzername:
+                    <input type="text" name="Benutzername" required>
+
+                </li>
+                <li>
+                    Passwort:
+                    <input type="password" name="passwort" required>
+
+                </li>
+                <li>
+                    Erneut Passwort:
+                    <input type="password" name="passwort" required>
+
+                </li>
+                <li>
+                    Profilfoto hochladen
+                    <input type="file" name="file" size="100" accept="jpg/*">
+
+                </li>
+                <li>
+                    Eigene Website:
+                    <input type="url" name="webseite">
+
+                </li>
+                <li>
+                    Wähle deine Profilfarbe aus (Hintergrund):
+                    <input type="color" name="farbe">
+
+                </li>
+                <li>
+                    Wie gut kennt ihr euch aus?
+                    <br/> Gar nicht
+                    <input type="range" name="zeit" min="1" max="10" step="1"> Sehr gut
+
+                </li>
+                <li>Welches Betriebsystem benutzt Ihr?
+                    <br/>
+                    <input type="radio" id="system1" name="system" value="Linux">
+                    <label for="system1">Linux</label>
+                    <input type="radio" id="system2" name="system" value="Windows">
+                    <label for="system2">Windows</label>
+                    <input type="radio" id="system3" name="system" value="Mac">
+                    <label for="system3">Mac</label>
+                </li>
+            </ul>
+
+        </fieldset>
+    </form>
+
+    <p>Profil 1
+        <br/>
+        <button type="submit" value="absenden" form="profil">Senden</button>
+        <button type="reset" form="profil">Zurücksetzen</button>
+    </p>
+    <p>Profil 2
+        <br/>
+        <button type="submit" value="absenden" form="profil2">Senden</button>
+        <button type="reset" form="profil2">Zurücksetzen</button>
+    </p>
+    <p>Beide Profile
+        <br/>
+        <button type="submit" value="absenden" form="profil2">Senden</button>
+        <button type="reset" form="profil2">Zurücksetzen</button>
+    </p>
+</body>
+
+</html>

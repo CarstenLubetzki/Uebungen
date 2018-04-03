@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+	}
+body { 
+    margin: 0;
+	padding: 0;
+	}
+
+/* -------------------------- Link -------------------------*/
+a { 
+    text-decoration: none;
+    color: rgb(255, 238, 46);
+}
+a:visited { 
+
+	}
+a:hover, a:focus, a:active { 
+    font-weight: 700;
+	}
+abbr {
+    font-weight: 500;
+    }
+.intro,
+.main{
+    width:50%;
+    box-sizing: border-box;
+}
+.intro { 
+    margin: 0;
+    height: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    padding: 25px;
+    }
+.main,
+.sidebar{
+    margin-left: 50%;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+header h1{
+    font-size: 5rem;
+    padding-bottom: 5%;
+    padding-top: 15px;
+    font-weight: bold;
+}
+header h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+p{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.summary > p{
+    padding: 0 100px 0 100px;
+}
+.summary > p > a {
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px 50px 15px 50px;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    }
+
+.summary > p > a:first-child::before{
+    content: ' ';
+    clear: right;
+    display: block;
+}
+section .preamble{
+    margin-top: 80px;
+}
+.preamble > p{
+    text-align: justify;
+    padding: 0 100px 0 100px;
+    font-size: 1.2rem;
+}
+
+.explanation{
+    width:100%;
+    height:100vh;
+    background-color: rgb(255, 148, 41);
+}
+.explanation > p,
+.explanation > h3,
+.participation > p,
+.participation > h3,
+.benefits > p,
+.benefits > h3,
+.requirements > p,
+.requirements > h3
+{
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.explanation > h3,
+.participation > h3{
+    padding-top: 25%;
+}
+.benefits > h3{
+    padding-top: 35%;
+}
+.requirements > h3{
+    padding-top: 10%;
+}
+
+.participation{
+    width:100%;
+    height:100vh;
+    background-color: rgb(56, 255, 145);
+}
+
+.benefits{
+    width:100%;
+    height:100vh;
+    background-color: rgb(57, 178, 238);
+}
+.requirements{
+    width:100%;
+    height:100vh;
+    background-color: rgb(53, 53, 53);
+}
+
+/* -------------------------- Footer -------------------------*/
+footer{
+    position: fixed;
+    left:17%;
+    bottom:35px;
+    z-index: 5;
+}
+footer > a{
+
+}
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-accessibility,
+.zen-github {
+    font-size: 0%;
+}
+.zen-validate-html::before,
+.zen-validate-css::before,
+.zen-license::before,
+.zen-accessibility::before,
+.zen-github::before{
+    content: url('https://dummyimage.com/50x50/a6a6a6/fff');
+}
+/* -------------------------- Sidebar -------------------------*/
+.sidebar { 
+    height: 65vh;
+    color: white;
+    }
+.design-selection{
+    height: 35vh;
+    background-color: dimgray;
+    padding-left: 100px;
+    padding-top: 10%;
+    display: block;
+}
+.zen-resources,
+.design-archives{
+    width: 50%;
+    height: 40vh;
+    float: left;
+    padding-top:15%;
+    padding-left: 15%;
+    box-sizing: border-box;
+}
+.design-archives
+{
+
+    background-color: rgb(109, 166, 166);
+}
+.zen-resources{
+    background-color: rgb(114, 145, 67);
+
+}

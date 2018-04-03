@@ -1,0 +1,282 @@
+@import url('http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:400italic,400');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+html {
+
+}
+body { 
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Open Sans;
+	box-sizing: border-box;
+	position: relative;
+	
+}
+.page-wrapper{
+	cursor: url('../img/fee.gif'), auto;
+}
+.intro{
+	position: relative;
+	background-color: transparent;
+}
+header{
+	height: 75vh;
+	background-image: url('http://getwallpapers.com/wallpaper/full/2/2/f/701605-legend-of-zelda-background-1920x1080-for-mac.jpg');
+    background-size: cover;
+	background-position: center;
+	cursor: default;
+}
+header h1,
+header h2{
+	color: white;
+}
+h3{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2rem;
+	color: white;
+}
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p{
+	color: white;
+}
+header h1{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 6rem;
+	text-transform: uppercase;
+}
+
+header h2{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+}
+.summary{
+	text-align: center;
+	width: 100%;
+	height:150px;
+	background-color: white;
+	padding: 50px 0 20px 0;
+	box-shadow: 0 2px 20px #000;
+}
+.preamble{
+	width: 500px;
+	height: 300px;
+	margin-top: 80px;
+	margin-left: 8%;
+	background-color: transparent;
+}
+
+.explanation{
+	width: 500px;
+	height: 300px;
+	margin-top: 80px;
+	margin-left: 35%;
+}
+
+.participation{
+	width: 500px;
+	height: 300px;
+	margin-top: 100px;
+	margin-left: 65%;
+}
+.benefits{
+	width: 500px;
+	height: 200px;
+	margin-top: 150px;
+	margin-left: 35%;
+}
+.requirements{
+	width: 500px;
+	height: 300px;
+	margin-left: 8%;
+	margin-bottom: 600px;
+}
+
+.extra1{
+	top: 900px;
+	right: 150px;
+	background: url('http://www.pngmart.com/files/2/Zelda-Link-PNG-Photos.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 620px;
+}
+.extra1,
+.extra2,
+.extra3{
+	cursor: url('../img/fee.gif'), auto;
+	position: absolute;
+	opacity: 0.25;
+	transition: opacity .25s ease-in-out;
+}
+
+.extra1:hover,
+.extra2:hover,
+.extra3:hover{
+	opacity: 1;
+}
+
+.extra2{
+	top: 1850px;
+	left: 100px;
+	background: url('https://i.pinimg.com/originals/4b/ee/ee/4beeeec582d34990d310d3fb29a9a436.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:900px;
+	height:210px;
+}
+
+
+
+.extra3{
+	top: 2500px;
+	right: 250px;
+	background: url('https://de.scrapzelda.com/wp-content/uploads/2015/01/triforce-icon-600x520.png');	
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:590px;
+	height:515px;
+}
+.extra4{
+	position: absolute;
+	background-image: url('../img/triforce.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 80px;
+	bottom: 680px;
+	left: 360px;
+}   
+
+html{
+	height: 100%;
+	background: radial-gradient(rgb(0, 0, 0, 0)40%, rgba(0, 0, 0, 0.9)), url('http://www.tokkoro.com/picsup/2948675-zelda-forest-the-legend-of-zelda-trees-green-nintendo___landscape-nature-wallpapers.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+footer{
+	width: 100%;
+	height: 600px;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	text-align: center;
+	position: relative;
+}
+
+.sidebar{
+width: 100%;
+height: 400px;
+background-image: url('../img/footer.jpg');
+background-size: auto;
+background-repeat: no-repeat;
+background-color: #000;
+background-position: left;
+cursor: default;
+}
+
+.summary,
+footer{
+	cursor: default;
+}
+.design-selection,
+.design-archives,
+.zen-resources{
+	float: left;
+}
+.design-selection{
+	padding-left: 500px;
+}
+.design-archives{
+	padding-left: 150px;
+}
+.zen-resources{
+	padding-left: 150px;
+}
+
+.participation a:link,
+.participation a:active,
+.participation a:visited,
+.requirements a:link,
+.requirements a:active,
+.requirements a:visited,
+.sidebar a:link,
+.sidebar a:active,
+.sidebar a:visited{
+	text-decoration: none;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.participation a:hover,
+.requirements a:hover,
+.summary a:hover,
+.sidebar a:hover{
+	color: rgb(255, 226, 38);
+}
+
+.summary a:link,
+.summary a:active,
+.summary a:visited {
+	text-decoration: none;
+	color: black;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-accessibility,
+.zen-github {
+	font-size: 0%;
+}
+.zen-validate-html::before,
+.zen-validate-css::before,
+.zen-license::before,
+.zen-accessibility::before,
+.zen-github::before{
+	position: absolute;
+}
+
+.zen-validate-html::before{
+	content: url('../img/html5.png');
+	top: 100px;
+	left: 250px;
+}
+
+.zen-validate-css::before{
+	content: url('../img/css3.png');
+	top: 100px;
+	left: 450px;
+}
+
+.zen-license::before{
+	content: url('../img/cc.png');
+	top: 250px;
+	left: 200px;
+}
+
+.zen-accessibility::before{
+	content: url('../img/accessibility.png');
+	top: 250px;
+	left: 500px;
+}
+.zen-github::before{
+	content: url('../img/github.png');
+	top: 400px;
+	left: 350px;
+}
+.sidebar li{
+	list-style-type: square white;
+}
+

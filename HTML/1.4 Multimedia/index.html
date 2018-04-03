@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+    <style>
+        html,
+        body,
+        iframe {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Multimedia Wiedergabeboard für Video und Audio</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Audio</h2>
+            <p>1.
+                <audio controls>
+                    <source src="src/SampleAudio_0.4mb.mp3" type="audio/mp3" />
+                </audio>
+                <a href="src/SampleAudio_0.4mb.mp3" download="SampleAudio_0.4mb.mp3">Download the MP3-Sample</a>
+            </p>
+            <p>2.
+                <audio controls>
+                    <source src="src/horse.ogg" type="audio/ogg" />
+                </audio>
+                <a href="src/horse.ogg" download="horse.ogg">Download the OGG-Sample</a>
+            </p>
+        </section>
+        <section>
+            <h2>Video</h2>
+            <video controls>
+                    <source type="video/mp4" media="(min-width:680px)" src="src/small.mp4">
+                <source type="video/mp4" media="(min-width:1200px)" src="src/SampleVideo_1280x720_1mb.mp4">
+
+            </video>
+        </section>
+        <section>
+                <h2>Youtube</h2>
+                <iframe src="http://www.youtube.com/embed/ei7Qc42O6S4" width="640" height="385" frameborder="0">
+                    <br />
+                </iframe>
+                <iframe src="http://www.youtube.com/embed/X2YA2PFUwr0" width="640" height="385" frameborder="0">
+                    <br />
+                </iframe>
+        </section>
+    </main>
+
+</body>
+
+</html>
