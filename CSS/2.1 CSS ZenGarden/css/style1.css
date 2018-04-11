@@ -21,6 +21,7 @@ a:hover, a:focus, a:active {
 	}
 abbr {
     font-weight: 500;
+    text-decoration: underline;
     }
 .intro,
 .main{
@@ -75,25 +76,31 @@ p{
     margin-right: 20px;
     display: block;
     }
-
+.summary > p > a:hover {
+    background-color: black;
+    color: white;
+    }
+    .summary a[title~=This]{
+        margin: 15px 0;
+    }
 .summary > p > a:first-child::before{
     content: ' ';
     clear: right;
     display: block;
 }
 section .preamble{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .preamble > p{
     text-align: justify;
     padding: 0 100px 0 100px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .explanation{
     width:100%;
     height:100vh;
-    background-color: rgb(255, 148, 41);
+    background: linear-gradient(to right top, rgba(255, 148, 41), rgb(239, 33, 26));
 }
 .explanation > p,
 .explanation > h3,
@@ -122,29 +129,36 @@ section .preamble{
 .participation{
     width:100%;
     height:100vh;
-    background-color: rgb(56, 255, 145);
+    background: linear-gradient(to left top, rgb(69, 221, 137), rgb(14, 168, 188));
+
 }
 
 .benefits{
     width:100%;
     height:100vh;
     background-color: rgb(57, 178, 238);
+    background: linear-gradient( rgb(57, 178, 238), rgb(53, 67, 154));
 }
 .requirements{
     width:100%;
     height:100vh;
-    background-color: rgb(53, 53, 53);
+    background: linear-gradient( rgb(142, 31, 159), rgb(212, 69, 152));
 }
 
 /* -------------------------- Footer -------------------------*/
 footer{
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    left:17%;
-    bottom:35px;
-    z-index: 5;
+    left:10px;
+    top: 30%;
+    z-index: 5; 
 }
-footer > a{
-
+footer a{
+    margin: 5px;
+}
+footer a:hover{
+    opacity: 0.5;
 }
 .zen-validate-html,
 .zen-validate-css,
@@ -152,13 +166,23 @@ footer > a{
 .zen-accessibility,
 .zen-github {
     font-size: 0%;
+    width: 50px;
+    height: auto;
 }
-.zen-validate-html::before,
-.zen-validate-css::before,
-.zen-license::before,
-.zen-accessibility::before,
+.zen-validate-html::before{
+    content: url('https://use.fontawesome.com/releases/v5.0.9/svgs/brands/html5.svg');
+}
+.zen-validate-css::before{
+    content: url('https://use.fontawesome.com/releases/v5.0.9/svgs/brands/css3-alt.svg');
+}
+.zen-license::before{
+    content: url('https://use.fontawesome.com/releases/v5.0.9/svgs/brands/creative-commons.svg');
+}
+.zen-accessibility::before{
+    content: url('https://use.fontawesome.com/releases/v5.0.9/svgs/brands/accessible-icon.svg');
+}
 .zen-github::before{
-    content: url('https://dummyimage.com/50x50/a6a6a6/fff');
+    content: url('https://use.fontawesome.com/releases/v5.0.9/svgs/brands/github.svg');
 }
 /* -------------------------- Sidebar -------------------------*/
 .sidebar { 
@@ -167,7 +191,7 @@ footer > a{
     }
 .design-selection{
     height: 35vh;
-    background-color: dimgray;
+    background: linear-gradient( rgb(246, 168, 103),rgb(116, 54, 2));
     padding-left: 100px;
     padding-top: 10%;
     display: block;
@@ -181,12 +205,9 @@ footer > a{
     padding-left: 15%;
     box-sizing: border-box;
 }
-.design-archives
-{
-
-    background-color: rgb(109, 166, 166);
+.design-archives{
+    background: linear-gradient(45deg, rgb(30, 113, 44), rgb(183, 239, 42));
 }
 .zen-resources{
-    background-color: rgb(114, 145, 67);
-
+    background: linear-gradient(315deg, rgb(30, 113, 44), rgb(183, 239, 42));
 }

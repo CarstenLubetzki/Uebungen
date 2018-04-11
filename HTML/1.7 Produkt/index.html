@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notebook GTXi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://dummyimage.com/250x100/ff5500/ffffff" alt="Logo">
+        <ul>
+            <li>Login</li>
+            <li>Merken</li>
+            <li>Warenkorb</li>
+        </ul>
+        <input type="search" name="suche" id="suche" placeholder="Suche">
+        <button>Suchen</button>
+        <select>
+            <option value="pc">PC</option>
+            <option value="notebook" selected>Notebook</option>
+            <option value="tablet">Tablet</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="server">Server</option>
+        </select>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Notebook</a>
+            </li>
+            <li>
+                <a href="#">GTX</a>
+            </li>
+            <li>
+                <a href="#">Notebook GTX</a>
+            </li>
+        </ul>
+    </header>
+    <section class="overview">
+        <div class="image">
+            <h2>Notebook GTXi</h2>
+            <div class="galerie">
+                <img src="https://dummyimage.com/500x500/e3e3e3/000000" alt="Big Image" class="imageBig">
+                <img src="https://dummyimage.com/100x100/e3e3e3/000000" alt="Small Image" class="imageSmall">
+                <img src="https://dummyimage.com/100x100/e3e3e3/000000" alt="Small Image" class="imageSmall">
+                <img src="https://dummyimage.com/100x100/e3e3e3/000000" alt="Small Image" class="imageSmall">
+                <img src="https://dummyimage.com/100x100/e3e3e3/000000" alt="Small Image" class="imageSmall">
+            </div>
+
+            <div>
+                <input type="checkbox" class="read-more-state" id="post-1" />
+
+                <p class="read-more-wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <span class="read-more-target">Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia
+                        quis ab? Excepturi vero tempore minus beatae voluptatem!</span>
+                </p>
+
+                <label for="post-1" class="read-more-trigger"></label>
+            </div>
+        </div>
+        <div class="options">
+            <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="small">Artikel-Nr. 1234567</p>
+            <p class="price">1000,01&euro;</p>
+            <button>Jetzt kaufen</button>
+        </div>
+    </section>
+    <section class="details">
+        <h3>
+            <table>
+                <tr>
+                    <td class="name">Herstellernummer</td>
+                    <td class="value">7577-0098</td>
+                </tr>
+                <tr>
+                    <td class="name">EAN-Nummer</td>
+                    <td class="value">55874214687</td>
+                </tr>
+                <tr>
+                    <td class="name">Prozessor</td>
+                    <td class="value">Nichts</td>
+                    <tr>
+                        <td></td>
+                        <td>Intel bla bla bla</td>
+                    </tr>
+                    <tr>
+                        <td>Turnobooster bis zu</td>
+                        <td>3.80 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Cache</td>
+                        <td>6 MB</td>
+                    </tr>
+                    <tr>
+                        <td>Technologie</td>
+                        <td>Intel ...</td>
+                    </tr>
+                </tr>
+            </table>
+        </h3>
+    </section>
+    <section class="faq">
+        <h2>Fragen und Antworten</h2>
+        <div class="wrapper">
+            <div class="half">
+                <div class="tab">
+                    <input id="tab-one" type="checkbox" name="tabs">
+                    <label for="tab-one">Kann man ...</label>
+                    <div class="tab-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis
+                            nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere
+                            dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-two" type="checkbox" name="tabs">
+                    <label for="tab-two">Wie sieht es aus mit ...</label>
+                    <div class="tab-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis
+                            nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere
+                            dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-three" type="checkbox" name="tabs">
+                    <label for="tab-three">Womit mach ich ...</label>
+                    <div class="tab-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis
+                            nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere
+                            dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customerRating">
+        <div class="totalRating">
+            <p>Durchschnittliche Wertung: 5/5</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+        <div class="commentsList">
+            <ul>
+                <li>
+                    <div class="commentsHead">
+                        <date>Donnerstag, 12. Juni 2017</date>
+                    </div>
+                    <div class="commentsBody">
+                        <h3>Headline</h3>
+                        <blockquote>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, vero aspernatur? Vero doloremque labore, at, tenetur dolorem
+                            perferendis repudiandae odio commodi laborum sequi amet sit quod facere? Alias, cupiditate eos.
+                        </blockquote>
+                    </div>
+                </li>
+                <li>
+                    <div class="commentsHead">
+                        <date>Donnerstag, 12. Juni 2017</date>
+                    </div>
+                    <div class="commentsBody">
+                        <h3>Headline</h3>
+                        <blockquote>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, vero aspernatur? Vero doloremque labore, at, tenetur dolorem
+                            perferendis repudiandae odio commodi laborum sequi amet sit quod facere? Alias, cupiditate eos.
+                        </blockquote>
+                    </div>
+                </li>
+                <li>
+                    <div class="commentsHead">
+                        <date>Donnerstag, 12. Juni 2017</date>
+                    </div>
+                    <div class="commentsBody">
+                        <h3>Headline</h3>
+                        <blockquote>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, vero aspernatur? Vero doloremque labore, at, tenetur dolorem
+                            perferendis repudiandae odio commodi laborum sequi amet sit quod facere? Alias, cupiditate eos.
+                        </blockquote>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="more"></button>
+    </section>
+    <section class="moreProducts">
+        <ul>
+
+            <li>
+                <img src="" alt="">
+                <h4>Notebook 1</h4>
+                <p>Nur 1000,00&euro;</p>
+                <a href="#">Kaufen</a>
+            </li>
+            <li>
+                <img src="" alt="">
+                <h4>Notebook 2</h4>
+                <p>Nur 1000,00&euro;</p>
+                <a href="#">Kaufen</a>
+            </li>
+            <li>
+                <img src="" alt="">
+                <h4>Notebook 3</h4>
+                <p>Nur 1000,00&euro;</p>
+                <a href="#">Kaufen</a>
+            </li>
+
+        </ul>
+    </section>
+</body>
+
+</html>
